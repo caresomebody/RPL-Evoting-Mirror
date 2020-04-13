@@ -1,0 +1,42 @@
+.nav__ul {
+    display: flex;
+    flex-flow: wrap nowrap;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+.nav__li {
+    margin: 0 4.5rem 0 0 ;
+}
+.nav__a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #D90000;
+    text-decoration: none;
+    /* background-color: salmon; */
+    display: inline-block;
+    padding: 3rem 0;
+}
+main {
+    /* background-color: lightgreen; */
+}
+section.banner {
+    /* background-color: lightblue; */
+    display: flex;
+}
+.banner__hero, 
+.banner__description {
+    color: #d90000;
+    padding: 7rem;
+}
+.banner__description .banner__title {
+    font-size: 5rem;
+}
+section.paslon {
+    display: flex;
+}
+article.paslon__item {
+    text-align: center;
+}
