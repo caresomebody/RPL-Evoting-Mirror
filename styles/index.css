@@ -1,42 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../assets/pictures/bg-portal3.png) no-repeat center center;
+    background-position: 0 10rem;
+    background-size: cover;
+}
+
+/* ==========================================HEADER==========================================*/
 .nav__ul {
     display: flex;
-    flex-flow: wrap nowrap;
+    flex-flow: row wrap;
     justify-content: flex-end;
     /* background-color: aqua; */
     padding: 0;
     list-style: none;
     margin: 0;
 }
-.nav__li {
-    margin: 0 4.5rem 0 0 ;
+
+.nav__li:first-child {
+    margin: 0 auto 0 4.5rem;
 }
+
+.nav__li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4.5rem 0 0;
+    padding: 2rem 0;
+}
+
+.nav__img {
+    width: 12rem;
+}
+
 .nav__a {
     font-size: 2rem;
     font-weight: bold;
     color: #D90000;
     text-decoration: none;
-    /* background-color: salmon; */
     display: inline-block;
-    padding: 3rem 0;
 }
+
+/* ==========================================MAIN==========================================*/
 main {
-    /* background-color: lightgreen; */
+    /* background: aqua; */
+    padding: 0 4.5rem;
 }
-section.banner {
-    /* background-color: lightblue; */
+
+/* ---------------------BANNER---------------------*/
+main .banner {
+    /* background: salmon; */
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 4.5rem auto 16rem;
 }
-.banner__hero, 
-.banner__description {
+
+.banner .banner__hero {
+    align-self: center;
+}
+
+.banner .banner__hero,
+.banner .banner__description {
+    flex-basis: 55rem;
     color: #d90000;
-    padding: 7rem;
 }
+
 .banner__description .banner__title {
     font-size: 5rem;
 }
-section.paslon {
-    display: flex;
+
+.banner__description .banner__paragraph {
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2.6rem;
 }
-article.paslon__item {
+
+/* ---------------------PASLON---------------------*/
+main .paslon {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.paslon .paslon__item {
+    background: white;
+    border-radius: 2rem;
+    padding: 2.5rem 1rem;
     text-align: center;
+    border: .1rem solid #d90000;
+    flex-basis: 34rem;
+}
+
+.paslon__description .paslon__foto {
+    border-radius: 50%;
+}
+
+.paslon__description>* {
+    color: #d90000;
+    margin-bottom: .8rem;
+}
+
+.paslon__description .paslon__no-urut,
+.paslon__description .paslon__nama {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.paslon__item .paslon__actions {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    margin: 2rem auto 0;
+}
+
+.paslon__actions .paslon__btn-action {
+    color: #D90000;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    background: white;
+    border: .2rem solid #D90000;
+    border-radius: 1.4rem;
+}
+
+.paslon__actions .paslon__btn-action:last-child {
+    color: white;
+    background: #D90000;
 }
