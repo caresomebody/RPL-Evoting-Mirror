@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+/* ==========================================HEADER==========================================*/
+.nav__ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.nav__li:first-child {
+    margin: 0 auto 0 4.5rem;
+}
+
+.nav__li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4.5rem 0 0;
+    padding: 2rem 0;
+}
+
+.nav__img {
+    width: 12rem;
+}
+
+.nav__a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #D90000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ---------------------BODY---------------------*/
+main {
+    overflow: auto;
+ }
+
+.judul-bantuan{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 3.6rem;
+    font-size: 4rem;
+    margin: 4.5rem auto 10rem;
+    margin-left: 7rem;
+    color: #D90000;
+}
+
+#gambar{
+    float: left;
+    margin-bottom: 2rem;
+}
+
+aside {
+    float: right;
+}
+.deskripsi pre h1{
+    margin-right: 7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #D90000;
+}
+h3,h4{
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
+ 
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: white;
+    background-color: #D90000;
+    text-align: center;
+ }
