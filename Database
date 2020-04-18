@@ -1,0 +1,34 @@
+CREATE TABLE PEMILIH(
+    NIK VARCHAR(20) NOT NULL,
+    NamaLengkap VARCHAR(50),
+    TanggalLahir DATE,
+    Alamat VARCHAR (50),
+    CONSTRAINT Pemilih_NIK_PK PRIMARY KEY(NIK)
+);
+
+CREATE TABLE PASLON(
+    NoUrut VARCHAR(4) NOT NULL,
+    NamaLengkap VARCHAR(50),
+    Pilihan_Jabatan VARCHAR(20),
+    Visi_Misi VARCHAR(500),
+    Partai VARCHAR (20),
+    CONSTRAINT Palon_NoUrut_PK PRIMARY KEY(NoUrut)
+);
+
+CREATE TABLE QUICK QOUNT(
+    IDPemilu VARCHAR(8) NOT NULL,
+    NoUrut VARCHAR(4),
+    JumlahSuara VARCHAR(20),
+    JumlahTPS VARCHAR(20),
+    CONSTRAINT QUICK QOUNT_IDPemilu_PK PRIMARY KEY(IDPemilu)
+);
+
+CREATE TABLE BERITA PASLON(
+    IDBerita VARCHAR(4) NOT NULL,
+    Judul_Berita VARCHAR(20),
+    Waktu_Terbit DATE,
+    Sumber VARCHAR (20),
+    CONSTRAINT BERITA PASLON_IDBerita_PK PRIMARY KEY(IDBerita)
+);
+
+
