@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../assets/pictures/bg-login.png) no-repeat center center;
+    background-position: -5em 0;
+    background-size: 1825.92px 973.47px;
+}
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d90000;
+}
+
+.tabel, .daftar{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background: white;
+    border-radius: 13px;
+    padding: 20px;
+    border: .1rem solid #d90000;
+}
+
+.daftar{
+    margin: 0 auto;
+    background: white;
+    border-radius: 13px;
+    padding: 15px;
+    border: .1rem solid #d90000;
+    width: 390px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.daftar h2{
+    font-weight: normal;
+}
+
+#desk{
+    font-weight: bold;
+}
+
+#submit{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img{
+    margin-top: 7em;
+    display: flex;
+    justify-content: center;
+}
+
+.text h1{
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: xx-large;
+}
+
+#desk, #deskk{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.input, .inputpw{
+    display: flex;
+    color:  #D90000;
+    padding: 1rem 7rem;
+    background: white;
+    font-size: large;
+    border: .2rem solid #D90000;
+    border-radius: 1.4rem;
+}
+
+.submit__btn-action {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 34rem;
+    margin: 2rem auto 0;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem 14rem;
+    background:#D90000;
+    border: .2rem solid #D90000;
+    border-radius: 1.4rem;
+}
+
+.buat{
+    color: #D90000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: white;
+    text-align: center;
+ }
+
