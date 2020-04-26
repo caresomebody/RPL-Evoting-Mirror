@@ -2,7 +2,10 @@ CREATE TABLE PEMILIH(
     NIK VARCHAR(20) NOT NULL,
     NamaLengkap VARCHAR(50),
     TanggalLahir DATE,
-    Alamat VARCHAR (50),
+    Kota_Kabupaten VARCHAR (50),
+    Provinsi VARCHAR (50),
+    Pin VARCHAR (20),
+    KonfimasiPin VARCHAR(20)
     CONSTRAINT Pemilih_NIK_PK PRIMARY KEY(NIK)
 );
 
@@ -24,11 +27,19 @@ CREATE TABLE QUICK QOUNT(
 );
 
 CREATE TABLE BERITA PASLON(
-    IDBerita VARCHAR(4) NOT NULL,
+    IDBerita VARCHAR(8) NOT NULL,
     Judul_Berita VARCHAR(20),
     Waktu_Terbit DATE,
     Sumber VARCHAR (20),
     CONSTRAINT BERITA PASLON_IDBerita_PK PRIMARY KEY(IDBerita)
 );
+
+CREATE TABLE REKAM JEJAK(
+    IDRekamJejak VARCHAR(8) NOT NULL,
+    Profil VARCHAR(500),
+    Pendidikan VARCHAR(500),
+    Harta_Kekayaan VARCHAR(20),
+    CONSTRAINT REKAM JEJAK_IDRekamJejak_PK PRIMARY KEY(IDRekamJejak)
+);    
 
 
