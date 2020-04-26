@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+/* ==========================================HEADER==========================================*/
+.nav__ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.nav__li:first-child {
+    margin: 0 auto 0 4.5rem;
+}
+
+.nav__li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4.5rem 0 0;
+    padding: 2rem 0;
+}
+
+.nav__img {
+    width: 12rem;
+}
+
+.nav__a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #D90000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/* ---------------------BODY---------------------*/
+main {
+    overflow: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d90000;
+ }
+
+.gambar{
+    float: left;
+    margin-top: 13rem;
+    margin-left: 7rem;
+}
+
+aside {
+    float: right;
+    margin-right: 9rem;
+    margin-bottom: 8rem;
+}
+
+.input, .inputpw{
+    display: flex;
+    color:  #D90000;
+    padding: 1rem 7rem;
+    background: white;
+    font-size: large;
+    border: .2rem solid #D90000;
+    border-radius: 1.4rem;
+    width: 380px;
+    margin-bottom: 1rem;
+}
+.tabel h2{
+    font-size: 44px;
+    font-weight: lighter;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+.text{
+    font-size: normal;
+    font-weight: bold;
+}
+
+.submit__btn-action {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 34rem;
+    margin: 2rem auto 0;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem 14rem;
+    background:#D90000;
+    border: .2rem solid #D90000;
+    border-radius: 1.4rem;
+    width: 380px;
+
+}
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: white;
+    background-color: #D90000;
+    text-align: center;
+ }

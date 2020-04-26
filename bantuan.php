@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/source/normalize.css">
     <link rel="stylesheet" href="./styles/source/clearfix.css">
     <link rel="stylesheet" href="./styles/bantuan.css">
-    <title>E-Voting - Home Page</title>
+    <title>E-Voting - Bantuan</title>
 </head>
 
 <body>
@@ -17,8 +17,8 @@
                 <li class="nav__li"><img class="nav__img" src="./assets/pictures/logo-copas.png" alt="Logo Copas"></li>
                 <li class=" nav__li"><a class="nav__a" href="index.php">Beranda</a></li>
                 <li class="nav__li"><a class="nav__a" href="#">Quick Count</a></li>
-                <li class="nav__li"><a class="nav__a" href="#">Bantuan</a></li>
-                <li class="nav__li"><a class="nav__a" href="#">Masuk</a></li>
+                <li class="nav__li"><a class="nav__a" href="bantuan.php">Bantuan</a></li>
+                <li class="nav__li"><a class="nav__a" href="log in.php">Masuk</a></li>
             </ul>
         </nav>
     </header>
