@@ -38,7 +38,7 @@ body {
 .nav__a {
     font-size: 2rem;
     font-weight: bold;
-    color: #D90000;
+    color: #d90000;
     text-decoration: none;
     display: inline-block;
 }
@@ -74,13 +74,13 @@ main .banner {
 
 .banner__description .banner__paragraph {
     font-size: 1.6rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 2.6rem;
 }
 
 /* ---------------------PASLON---------------------*/
 main .paslon {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -91,7 +91,7 @@ main .paslon {
     border-radius: 2rem;
     padding: 2.5rem 1rem;
     text-align: center;
-    border: .1rem solid #d90000;
+    border: 0.1rem solid #d90000;
     flex-basis: 34rem;
 }
 
@@ -99,9 +99,9 @@ main .paslon {
     border-radius: 50%;
 }
 
-.paslon__description>* {
+.paslon__description > * {
     color: #d90000;
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
 }
 
 .paslon__description .paslon__no-urut,
@@ -118,16 +118,17 @@ main .paslon {
 }
 
 .paslon__actions .paslon__btn-action {
-    color: #D90000;
+    text-decoration: none;
+    color: #d90000;
     font-size: 1.6rem;
     font-weight: bold;
     padding: 0.8rem 1rem;
     background: white;
-    border: .2rem solid #D90000;
+    border: 0.2rem solid #d90000;
     border-radius: 1.4rem;
 }
 
 .paslon__actions .paslon__btn-action:last-child {
     color: white;
-    background: #D90000;
+    background: #d90000;
 }

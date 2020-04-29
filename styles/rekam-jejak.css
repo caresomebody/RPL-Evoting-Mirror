@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+}
+/* =======================MAIN======================= */
+.rekam-jejak {
+    margin: 0 0 8rem 0;
+}
+.rekam-jejak__title {
+    color: #d90000;
+    font-size: 3.8rem;
+    font-weight: bold;
+}
+.rekam-jejak__paslon-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.rekam-jejak__paslon {
+    text-align: center;
+    border: 0.2rem solid grey;
+    flex: 1 1 50rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+}
+.rekam-jejak__paslon > * {
+    margin: 0 0 1rem 0;
+}
+.berita {
+    color: #000;
+}
+.berita__container {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0 4rem 0;
+}
+.berita__item {
+    /* background: aqua; */
+    flex: 1 1 20rem;
+}
+.berita__item:first-child {
+    text-align: center;
+}
+.berita__item:last-child {
+    /* background: salmon; */
+    flex: 10 1 20rem;
+}
+.berita__title,
+.berita__subtitle,
+.berita__para,
+.berita__link {
+    margin: 0 0 0.6rem 0;
+}
+.berita__link {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2rem;
+    text-align: none;
+    padding: 0.5rem 1rem;
+    background: #d90000;
+    color: #fff;
+}

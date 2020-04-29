@@ -43,8 +43,8 @@
                         <p class="paslon__visi-misi-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nostrum? Maxime provident, repellendus atque quia ipsam ducimus, deserunt quasi odit culpa cum ea officia vitae dolorem ullam odio autem labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint aut. Maxime enim at libero natus laudantium ipsam maiores, impedit perspiciatis similique dolorem quisquam dolor expedita doloribus et illo. Cum.</p>
                     </div>
                     <form class="paslon__actions" action="" method="POST">
-                        <button class="paslon__btn-action type=" submit"">REKAM JEJAK</button>
-                        <button class="paslon__btn-action type=" submit"">COBLOS</button>
+                        <a href="rekam-jejak.php" class="paslon__btn-action" type="submit">REKAM JEJAK</a>
+                        <button class="paslon__btn-action" type="submit">COBLOS</button>
                     </form>
                 </article>
             <?php endfor; ?>
