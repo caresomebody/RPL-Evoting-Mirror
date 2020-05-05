@@ -1,12 +1,11 @@
-CREATE TABLE PEMILIH(
-    NIK VARCHAR(20) NOT NULL,
-    NamaLengkap VARCHAR(50),
-    TanggalLahir DATE,
-    Kota_Kabupaten VARCHAR (50),
-    Provinsi VARCHAR (50),
-    Pin VARCHAR (20),
-    KonfimasiPin VARCHAR(20)
-    CONSTRAINT Pemilih_NIK_PK PRIMARY KEY(NIK)
+CREATE TABLE Pemilih(
+    nik VARCHAR(20) NOT NULL,
+    nama_lengkap VARCHAR(255) NOT NULL,
+    tanggal_lahir VARCHAR(100) NOT NULL,
+    kota VARCHAR (100) NOT NULL,
+    provinsi VARCHAR (100) NOT NULL,
+    pin VARCHAR (20) NOT NULL,
+    CONSTRAINT pemilih_nik_pk PRIMARY KEY(nik)
 );
 
 CREATE TABLE PASLON(

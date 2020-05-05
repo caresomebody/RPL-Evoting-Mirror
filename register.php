@@ -1,3 +1,15 @@
+<?php
+    include("evoting-config.php");
+    include("evoting-functions.php");
+    if ( isset($_POST["submit"]) ) {
+        if (register()) {
+            echo "Succes!";
+        } else {
+            echo "Gagal";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,54 +43,50 @@
         </div>
         <aside class="form">
         <div class="tabel">
-            <h2>Pendaftaran Pemilih</h2>
-            <table class="card">
-                <tr>
-                    <td class="text">NIK</td>
-                </tr>
-                <tr>
-                  <td><input type="text" name="NIK" placeholder="" class=input maxlength="100"></td>
-                </tr>
-                <tr>
-                    <td class="text">Nama Lengkap</td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="Nama Lengkap" placeholder="" class=input maxlength="100"></td>
-                </tr>
-                <tr>
-                    <td class="text">Tanggal Lahir</td>
-                </tr>
-                <tr>
-                  <td><input type="date" name="TL" placeholder="" class=input></td>
-                </tr>
-                <tr>
-                    <td class="text">Kota/Kabupaten</td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="Kota" placeholder="" class=input maxlength="100"></td>
-                </tr>
-                <tr>
-                    <td class="text">Provinsi</td>
-                </tr>
-                <tr>
-                  <td><input type="text" name="Prov" placeholder="" class=input maxlength="100"></td>
-                </tr>
-                <tr>
-                    <td class="text">PIN</td>
-                </tr>
-                <tr>
-                    <td><input type="password" name="password" class=inputpw /></td>
-                </tr>
-                <tr>
-                    <td class="text">Konfirmasi PIN</td>
-                </tr>
-                <tr>
-                    <td><input type="password" name="password" class=inputpw /></td>
-                </tr>
-                <tr id=submit>
-                    <td><button class="submit__btn-action" type="submit">DAFTAR</button></td>
-                </tr>
-            </table>
+           <form action="" method="post">
+                <h2>Pendaftaran Pemilih</h2>
+                <table class="card">
+                    <tr>
+                        <td class="text">NIK</td>
+                    </tr>
+                    <tr>
+                        <td><input name="nik" type="text" placeholder="" class="input" maxlength="100"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Nama Lengkap</td>
+                    </tr>
+                    <tr>
+                        <td><input name="nama_lengkap" type="text" placeholder="" class="input" maxlength="100"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Tanggal Lahir</td>
+                    </tr>
+                    <tr>
+                        <td><input name="tanggal_lahir" type="text" placeholder="" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Kota/Kabupaten</td>
+                    </tr>
+                    <tr>
+                        <td><input name="kota" type="text" placeholder="" class="input" maxlength="100"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Provinsi</td>
+                    </tr>
+                    <tr>
+                        <td><input name="provinsi" type="text" placeholder="" class="input" maxlength="100"></td>
+                    </tr>
+                    <tr>
+                        <td class="text">PIN</td>
+                    </tr>
+                    <tr>
+                        <td><input name="pin" type="password" class="input" /></td>
+                    </tr>
+                    <tr id=submit>
+                        <td><button name="submit" class="submit__btn-action" type="submit">DAFTAR</button></td>
+                    </tr>
+                </table>
+           </form>
         </div>
         </aside>
     </main>
