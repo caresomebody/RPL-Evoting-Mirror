@@ -57,7 +57,7 @@
                     <p class="berita__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione excepturi, magni harum ab quasi, fuga cumque, eius explicabo dolorem aperiam blanditiis incidunt a doloremque iure culpa optio quas sint numquam. Accusamus odio tenetur ea harum? Nemo eum dolorum officiis, necessitatibus error beatae, iste et sequi sit recusandae atque, laborum maxime praesentium? Ad qui libero quibusdam vero accusantium nihil impedit voluptatibus dicta quisquam aliquid amet dolorem dolore modi nesciunt blanditiis laudantium, architecto quae? Dolore blanditiis facilis, aliquam consequuntur fuga laudantium assumenda earum eligendi rem quos minus, amet ullam excepturi exercitationem commodi aspernatur tempore aperiam atque porro dolores rerum soluta nemo natus?
                     </p>
                     <br>
-                    <a href="#" class="berita__link">Selengkapnya</a>
+                    <a href="detail-rekam-jejak.php" class="berita__link">Selengkapnya</a>
                 </div>
             </div>
             <div class="berita__container">

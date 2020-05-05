@@ -1,0 +1,46 @@
+.quick-count__title-wrapper {
+    padding: 1rem;
+    border: 0.1rem solid #d90000;
+    margin: 2rem 0;
+    text-align: center;
+    color: #d90000;
+}
+.quick-count__title {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+.quick-count__paslon-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.quick-count__paslon {
+    flex: 1 1 34rem;
+    text-align: center;
+    border: 0.2rem solid #d90000;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: #d90000;
+}
+.quick-count__paslon > * {
+    margin: 0 0 2rem 0;
+}
+.quick-count__paslon:nth-child(-n + 2) {
+    margin: 0 2rem 0 0;
+}
+.quick-count__suara {
+    font-size: 3.2rem;
+}
+.quick-count__photo {
+    border-radius: 50%;
+}
+.quick-count__suara-masuk-wrapper {
+    padding: 1rem;
+    color: #d90000;
+    border: 0.2rem solid #d90000;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+.quick-count__suara-masuk {
+    font-size: 3.2rem;
+}
