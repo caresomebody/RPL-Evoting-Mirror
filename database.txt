@@ -1,3 +1,4 @@
+/* =====================UDAH FIX BOLEH DI-CREATE===================== */
 CREATE TABLE Pemilih(
     nik VARCHAR(20) NOT NULL,
     nama_lengkap VARCHAR(255) NOT NULL,
@@ -7,6 +8,8 @@ CREATE TABLE Pemilih(
     pin VARCHAR (20) NOT NULL,
     CONSTRAINT pemilih_nik_pk PRIMARY KEY(nik)
 );
+
+/* =================BELOM FIX JANGAN DULU DI-CREATE================= */
 
 CREATE TABLE PASLON(
     NoUrut VARCHAR(4) NOT NULL,

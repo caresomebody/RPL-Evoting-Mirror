@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./styles/source/normalize.css">
     <link rel="stylesheet" href="./styles/source/clearfix.css">
     <link rel="stylesheet" href="./styles/register.css">
-    <title>E-Voting - Masuk</title>
+    <title>E-Voting - Daftar</title>
 </head>
 
 <body>
