@@ -18,7 +18,7 @@
                 <li class=" nav__li"><a class="nav__a" href="index.php">Beranda</a></li>
                 <li class="nav__li"><a class="nav__a" href="#">Quick Count</a></li>
                 <li class="nav__li"><a class="nav__a" href="bantuan.php">Bantuan</a></li>
-                <li class="nav__li"><a class="nav__a" href="log in.php">Masuk</a></li>
+                <li class="nav__li"><a class="nav__a" href="login.php">Masuk</a></li>
             </ul>
         </nav>
     </header>
