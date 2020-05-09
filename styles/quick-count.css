@@ -44,3 +44,12 @@
 .quick-count__suara-masuk {
     font-size: 3.2rem;
 }
+
+footer {
+    margin-top: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: white;
+    background-color: #d90000;
+    text-align: center;
+}

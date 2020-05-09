@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+/* ==========================================HEADER==========================================*/
+.nav__ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.nav__li:first-child {
+    margin: 0 auto 0 4.5rem;
+}
+
+.nav__li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4.5rem 0 0;
+    padding: 2rem 0;
+}
+
+.nav__img {
+    width: 12rem;
+}
+
+.nav__a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d90000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ---------------------BODY---------------------*/
+main {
+    overflow: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d90000;
+}
+
+.profile {
+    float: left;
+    margin-top: 5rem;
+    margin-left: 20rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background: white;
+    border-radius: 2rem;
+    padding: 50px;
+    text-align: center;
+    border: 0.1rem solid #d90000;
+    flex-basis: 34rem;
+}
+
+.user_btn-edit, .user_btn-hapus  {
+    text-decoration: none;
+    color: #d90000;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    background: white;
+    border: 0.2rem solid #d90000;
+    border-radius: 1.4rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 125px;
+}
+
+.user_btn-edit{
+    color: white;
+    background: #d90000;
+}
+
+.user_nama, .user_nik{
+    margin-top: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d90000;
+}
+
+.user_nama{
+    font-size: xx-large;
+}
+
+.user_nik{
+    margin-top: 0.5em;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+.user_foto{
+    border-radius: 50%;
+}
+
+aside {
+    float: right;
+    margin-right: 9rem;
+    margin-bottom: 8rem;
+}
+.input {
+    outline: none;
+}
+.input,
+.inputpw {
+    display: flex;
+    color: #d90000;
+    padding: 1rem 7rem;
+    background: white;
+    font-size: large;
+    border: 0.2rem solid #d90000;
+    border-radius: 1.4rem;
+    width: 380px;
+    margin-bottom: 1rem;
+}
+.tabel h2 {
+    font-size: 44px;
+    font-weight: lighter;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+.text {
+    font-size: normal;
+    font-weight: bold;
+}
+
+.submit__btn-action {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 34rem;
+    margin: 2rem auto 0;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem 14rem;
+    background: #d90000;
+    border: 0.2rem solid #d90000;
+    border-radius: 1.4rem;
+    width: 380px;
+}
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: white;
+    background-color: #d90000;
+    text-align: center;
+}

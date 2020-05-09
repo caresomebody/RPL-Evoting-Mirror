@@ -132,3 +132,11 @@ main .paslon {
     color: white;
     background: #d90000;
 }
+
+footer {
+    margin-top: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}

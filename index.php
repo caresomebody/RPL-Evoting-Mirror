@@ -50,6 +50,14 @@
             <?php endfor; ?>
         </section>
     </main>
+    <footer>
+        <h3>
+            <p>RPL E-Voting CHOPAS  &copy; 2020</p>
+        </h3>
+        <h4>
+            <p>Ali Naufal Ammarullah, Nurul Akbar Al-Ghifari, Nur Laely Mutmainnah</p>
+        </h4>
+    </footer>
 </body>
 
 </html>

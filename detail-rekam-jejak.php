@@ -18,7 +18,7 @@
             <ul class="nav__ul">
                 <li class="nav__li"><img class="nav__img" src="./assets/pictures/logo-copas.png" alt="Logo Copas"></li>
                 <li class=" nav__li"><a class="nav__a" href="index.php">Beranda</a></li>
-                <li class="nav__li"><a class="nav__a" href="#">Quick Count</a></li>
+                <li class="nav__li"><a class="nav__a" href="quick-count.php">Quick Count</a></li>
                 <li class="nav__li"><a class="nav__a" href="bantuan.php">Bantuan</a></li>
                 <li class="nav__li"><a class="nav__a" href="login.php">Masuk</a></li>
             </ul>
@@ -63,5 +63,13 @@
            </div>
         </section>
     </main>
+    <footer>
+        <h3>
+            <p>RPL E-Voting CHOPAS  &copy; 2020</p>
+        </h3>
+        <h4>
+            <p>Ali Naufal Ammarullah, Nurul Akbar Al-Ghifari, Nur Laely Mutmainnah</p>
+        </h4>
+    </footer>
 </body>
 </html>
