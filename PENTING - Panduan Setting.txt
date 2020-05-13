@@ -1,0 +1,16 @@
+/*
+ * Panduan (settingan) sebelum menjalankan aplikasi RPL-evoting
+*/
+
+1. Jangan lupa Aktifkan XAMPP, klik START yang bagian Apache dan MySQL
+
+2. Ubah setingan $db di file evoting-config.php dan evoting-functions.php.
+
+NOTES : Ganti user dan password sesuai settingan postgresql di komputer kalian!
+$db = pg_connect('host=localhost dbname=evoting user=postgres password=postgres');
+
+3. Buat database yang namanya evoting terus CREATE TABLE pemilih sesuai dengan di database.txt
+
+4. Terus klik tombol MASUK dan BUAT AKUN BARU
+
+5. Jika ada error laporin di grup line.

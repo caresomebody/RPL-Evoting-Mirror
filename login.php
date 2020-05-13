@@ -4,10 +4,12 @@
     include("evoting-functions.php");
     if ( isset($_POST["submit"]) ) {
         if (login()) {
+            $nik = $_POST["nik"];
             $_SESSION["login"] = true;
-            header("Location: dashboard.php");
+            header("Location: dashboard.php?nik=$nik");
+            exit;
         } else {
-            echo "<script>alert('Anda GAGAL lOGIN')</script>";
+            echo "<script>alert('NIK atau PIN salah!')</script>";
         }
     }
 ?>

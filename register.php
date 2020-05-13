@@ -1,11 +1,12 @@
 <?php
     include("evoting-config.php");
     include("evoting-functions.php");
+    $st = false;
     if ( isset($_POST["submit"]) ) {
         if (register()) {
-            echo "Succes!";
+            echo "<script>alert('Sukses Mendaftar')</script>";
         } else {
-            echo "Gagal";
+            echo "<script>alert('Gagal Mendaftar')</script>";
         }
     }
 ?>
@@ -28,7 +29,7 @@
             <ul class="nav__ul">
                 <li class="nav__li"><img class="nav__img" src="./assets/pictures/logo-copas.png" alt="Logo Copas"></li>
                 <li class=" nav__li"><a class="nav__a" href="index.php">Beranda</a></li>
-                <li class="nav__li"><a class="nav__a" href="#">Quick Count</a></li>
+                <li class="nav__li"><a class="nav__a" href="quick-count.php">Quick Count</a></li>
                 <li class="nav__li"><a class="nav__a" href="bantuan.php">Bantuan</a></li>
                 <li class="nav__li"><a class="nav__a" href="login.php">Masuk</a></li>
             </ul>
@@ -50,37 +51,37 @@
                         <td class="text">NIK</td>
                     </tr>
                     <tr>
-                        <td><input name="nik" type="text" placeholder="" class="input" maxlength="100"></td>
+                        <td><input required name="nik" type="text" placeholder="" class="input" maxlength="100"></td>
                     </tr>
                     <tr>
                         <td class="text">Nama Lengkap</td>
                     </tr>
                     <tr>
-                        <td><input name="nama_lengkap" type="text" placeholder="" class="input" maxlength="100"></td>
+                        <td><input required name="nama_lengkap" type="text" placeholder="" class="input" maxlength="100"></td>
                     </tr>
                     <tr>
                         <td class="text">Tanggal Lahir</td>
                     </tr>
                     <tr>
-                        <td><input name="tanggal_lahir" type="text" placeholder="" class="input"></td>
+                        <td><input required name="tanggal_lahir" type="text" placeholder="" class="input"></td>
                     </tr>
                     <tr>
                         <td class="text">Kota/Kabupaten</td>
                     </tr>
                     <tr>
-                        <td><input name="kota" type="text" placeholder="" class="input" maxlength="100"></td>
+                        <td><input required name="kota" type="text" placeholder="" class="input" maxlength="100"></td>
                     </tr>
                     <tr>
                         <td class="text">Provinsi</td>
                     </tr>
                     <tr>
-                        <td><input name="provinsi" type="text" placeholder="" class="input" maxlength="100"></td>
+                        <td><input required name="provinsi" type="text" placeholder="" class="input" maxlength="100"></td>
                     </tr>
                     <tr>
                         <td class="text">PIN</td>
                     </tr>
                     <tr>
-                        <td><input name="pin" type="password" class="input" /></td>
+                        <td><input required name="pin" type="password" class="input" /></td>
                     </tr>
                     <tr id=submit>
                         <td><button name="submit" class="submit__btn-action" type="submit">DAFTAR</button></td>

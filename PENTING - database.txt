@@ -6,6 +6,7 @@ CREATE TABLE Pemilih(
     kota VARCHAR (100) NOT NULL,
     provinsi VARCHAR (100) NOT NULL,
     pin VARCHAR (20) NOT NULL,
+    foto VARCHAR(100) NOT NULL,
     CONSTRAINT pemilih_nik_pk PRIMARY KEY(nik)
 );
 

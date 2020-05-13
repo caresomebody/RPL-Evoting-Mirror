@@ -45,7 +45,7 @@ main {
 
 .profile {
     float: left;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-left: 20rem;
     display: flex;
     flex-flow: row wrap;
@@ -58,7 +58,8 @@ main {
     flex-basis: 34rem;
 }
 
-.user_btn-edit, .user_btn-hapus  {
+.user_btn-edit,
+.user_btn-hapus {
     text-decoration: none;
     color: #d90000;
     font-size: 1.6rem;
@@ -73,29 +74,31 @@ main {
     width: 125px;
 }
 
-.user_btn-edit{
+.user_btn-edit {
     color: white;
     background: #d90000;
 }
 
-.user_nama, .user_nik{
+.user_nama,
+.user_nik {
     margin-top: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #d90000;
 }
 
-.user_nama{
+.user_nama {
     font-size: xx-large;
 }
 
-.user_nik{
+.user_nik {
     margin-top: 0.5em;
     font-size: x-large;
     font-weight: lighter;
 }
 
-.user_foto{
+.user_foto {
     border-radius: 50%;
+    max-width: 15rem;
 }
 
 aside {
@@ -110,13 +113,14 @@ aside {
 .inputpw {
     display: flex;
     color: #d90000;
-    padding: 1rem 7rem;
+    padding: 1rem 1.2rem;
     background: white;
-    font-size: large;
+    font-size: 1.6rem;
     border: 0.2rem solid #d90000;
     border-radius: 1.4rem;
     width: 380px;
     margin-bottom: 1rem;
+    height: 4rem;
 }
 .tabel h2 {
     font-size: 44px;

@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    include("evoting-config.php");
+    include("evoting-functions.php");
+    if (isset($_GET["state"])) {
+        $nik = $_GET["nik"];
+        $user = getUser($nik);
+        $state = true;
+    } else {
+        $state = false;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,11 +27,16 @@
     <header>
         <nav>
             <ul class="nav__ul">
+            <?php if ($state) : ?>
+                <li class="nav__li"><img class="nav__img" src="./assets/pictures/logo-copas.png" alt="Logo Copas"></li>
+                <li class="nav__li"><a class="nav__a" href="dashboard.php?nik=<?= $nik;?>">Kembali ke Dashboard</a></li>
+            <?php else : ?>
                 <li class="nav__li"><img class="nav__img" src="./assets/pictures/logo-copas.png" alt="Logo Copas"></li>
                 <li class=" nav__li"><a class="nav__a" href="index.php">Beranda</a></li>
                 <li class="nav__li"><a class="nav__a" href="quick-count.php">Quick Count</a></li>
                 <li class="nav__li"><a class="nav__a" href="bantuan.php">Bantuan</a></li>
                 <li class="nav__li"><a class="nav__a" href="login.php">Masuk</a></li>
+            <?php endif ; ?>
             </ul>
         </nav>
     </header>
