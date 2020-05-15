@@ -30,7 +30,7 @@ Lainnya
 CHOPAS(Choose Paslon) merupakan aplikasi berbasis web yang berguna untuk melakukan pemilihan umum legislatif dan pemilihan umum presiden secara online. CHOPAS memiliki fitur untuk mencoblos, rekam jejak paslon, serta quick count dari pemilihan.
 
 # Analisis User
-
+Target dari aplikasi kami adalah masyarakat yang sudah memenuhi syarat untuku memilih calon kepala daerah. Saat ini, pemilihan dilakukan secara langsung yang masih menggunakan kertas.
 
 # User Story
 
