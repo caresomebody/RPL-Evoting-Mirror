@@ -9,6 +9,12 @@
    } else {
        $state = false;
    }
+   if ( isset($_POST["coblos"]) ) {
+       echo "<script>alert('Login terlebih dahulu untuk melukan pemilihan')</script>";
+   }
+   if (isset($_GET["pilih"]) == 1) {
+        echo "<script>alert('Anda sudah mencoblos!')</script>";
+   }
 ?>
 
 <!DOCTYPE html>
@@ -60,10 +66,19 @@
                         <h3 class="paslon__visi-misi">Visi dan Misi</h3>
                         <p class="paslon__visi-misi-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nostrum? Maxime provident, repellendus atque quia ipsam ducimus, deserunt quasi odit culpa cum ea officia vitae dolorem ullam odio autem labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint aut. Maxime enim at libero natus laudantium ipsam maiores, impedit perspiciatis similique dolorem quisquam dolor expedita doloribus et illo. Cum.</p>
                     </div>
-                    <form class="paslon__actions" action="" method="POST">
+                    <?php if (isset($_SESSION["login"])) : ?>
+                    <form action="quick-count.php?nik=<?= $nik;?>&state=<?= $state;?>" class="paslon__actions" method="post">
                         <a href="rekam-jejak.php" class="paslon__btn-action" type="submit">REKAM JEJAK</a>
-                        <button class="paslon__btn-action" type="submit">COBLOS</button>
+                        <input type="text" name="no_urut" value="<?= $i;?>" hidden>
+                        <button name="coblos" class="paslon__btn-action" type="submit">COBLOS</button>
                     </form>
+                    <?php else : ?>
+                    <form action="" class="paslon__actions" method="post">
+                        <a href="rekam-jejak.php" class="paslon__btn-action" type="submit">REKAM JEJAK</a>
+                        <input type="text" name="no_urut" value="<?= $i;?>" hidden>
+                        <button name="coblos" class="paslon__btn-action" type="submit">COBLOS</button>
+                    </form>
+                    <?php endif; ?>
                 </article>
             <?php endfor; ?>
         </section>

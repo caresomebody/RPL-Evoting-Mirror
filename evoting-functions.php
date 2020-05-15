@@ -8,7 +8,28 @@
         $user = pg_fetch_assoc($query);
         return $user;
     }
-
+    function getPaslon ($no_urut) {
+        global $db;
+        $query = pg_query("SELECT * FROM paslon 
+        WHERE no_urut = '$no_urut'");
+        $paslon = pg_fetch_assoc($query);
+        return $paslon;
+    }
+    function updateSuaraPaslon($no_urut, $suara_awal, $nik_pemilih) {
+        global $db;
+        $suara_awal++;
+        $paslon = pg_query("UPDATE paslon SET
+        jumlah_suara = $suara_awal 
+        WHERE no_urut = '$no_urut' ");
+        $pemilih = pg_query("UPDATE pemilih SET
+        status_memilih = 'true' 
+        WHERE nik = '$nik_pemilih' ");
+        if( $paslon && $pemilih == TRUE ) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
     // ===========FUNGSI REGISTER==============
     function register () {
         global $db;
@@ -16,11 +37,11 @@
         $nama_lengkap = $_POST["nama_lengkap"];
         $tanggal_lahir = $_POST["tanggal_lahir"];
         $kota = $_POST["kota"];
-        $provinsi = $_POST["provinsi"];
+        $provinsi = $_POST["provinsi"]; 
         $pin = $_POST["pin"];
         $query = pg_query("INSERT INTO pemilih 
-        (nik, nama_lengkap, tanggal_lahir, kota, provinsi, pin, foto) VALUES
-        ('$nik', '$nama_lengkap', '$tanggal_lahir', '$kota', '$provinsi', '$pin', '')");
+        (nik, nama_lengkap, tanggal_lahir, kota, provinsi, pin, foto, status_memilih) VALUES
+        ('$nik', '$nama_lengkap', '$tanggal_lahir', '$kota', '$provinsi', '$pin', '', 'false')");
         if( $query==TRUE ) {
             return 1;
         } else {

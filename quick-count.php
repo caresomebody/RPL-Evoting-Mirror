@@ -9,6 +9,25 @@
     } else {
         $state = false;
     }
+    // GET PASLON DATA\
+    $pilihan;
+    $total_suara = 0;
+    $noUrut = [1, 2, 3];
+    $paslon = [];
+    foreach ($noUrut as $n) {
+        $paslon[] = getPaslon($n);
+    }
+    if (isset($_POST["no_urut"])) {
+        $pilihan = $_POST['no_urut'];
+        if ( $user["status_memilih"] === 'f') {
+            updateSuaraPaslon($pilihan, $paslon[$pilihan - 1]["jumlah_suara"], $nik);
+        } else {
+            header("Location: index.php?nik=$nik&state=$state&pilih=1");
+            die;
+        }
+        header("Location: quick-count.php?nik=$nik&state=$state&pilih=1");
+        // var_dump($paslon);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +41,12 @@
     <link rel="stylesheet" href="./styles/rekam-jejak.css">
     <link rel="stylesheet" href="./styles/quick-count.css">
     <title>E-Voting - Home Page</title>
+    <style>
+    .--coblos {
+        text-align: center;
+        color: green;
+    }
+    </style>
 </head>
 
 <body>
@@ -43,37 +68,27 @@
     </header>
     <main>
         <section class="quick-count">
+            <?php if (isset($_GET['pilih']) == 1) : ?>
+                <h2 class="quick-count__title --coblos">Anda berhasil mencoblos!</h2>
+            <?php endif; ?>
             <div class="quick-count__title-wrapper">
                 <h1 class="quick-count__title">Quick Count</h1>
             </div>
             <div class="quick-count__paslon-wrapper">
-                <div class="quick-count__paslon">
-                    <span class="quick-count__photo-wrapper">
-                        <img src="./assets/pictures/dummy01.jpg" alt="Paslon" class="quick-count__photo" width="100">
-                    </span>
-                    <h1 class="quick-count__no-urut">01</h1>
-                    <h2 class="quick-count__nama">Lorem - Ipsum</h2>
-                    <h3 class="quick-count__suara">12</h3>
-                </div>
-                <div class="quick-count__paslon">
-                    <span class="quick-count__photo-wrapper">
-                        <img src="./assets/pictures/dummy01.jpg" alt="Paslon" class="quick-count__photo" width="100">
-                    </span>
-                    <h1 class="quick-count__no-urut">01</h1>
-                    <h2 class="quick-count__nama">Lorem - Ipsum</h2>
-                    <h3 class="quick-count__suara">12</h3>
-                </div>
-                <div class="quick-count__paslon">
-                    <span class="quick-count__photo-wrapper">
-                        <img src="./assets/pictures/dummy01.jpg" alt="Paslon" class="quick-count__photo" width="100">
-                    </span>
-                    <h1 class="quick-count__no-urut">01</h1>
-                    <h2 class="quick-count__nama">Lorem - Ipsum</h2>
-                    <h3 class="quick-count__suara">12</h3>
-                </div>
+                <?php foreach($paslon as $p) : ?>
+                    <div class="quick-count__paslon">
+                        <span class="quick-count__photo-wrapper">
+                            <img src="./assets/pictures/dummy01.jpg" alt="Paslon" class="quick-count__photo" width="100">
+                        </span>
+                        <h1 class="quick-count__no-urut"><?= "0".$p["no_urut"]; ?></h1>
+                        <h2 class="quick-count__nama"><?= $p["nama_lengkap"]; ?></h2>
+                        <h3 class="quick-count__suara">Suara Masuk : <?= $p["jumlah_suara"]; ?></h3>
+                    </div>
+                    <?php $total_suara += $p["jumlah_suara"]; ?>
+                <?php endforeach; ?>
             </div>
             <div class="quick-count__suara-masuk-wrapper">
-                <h1 class="quick-count__suara-masuk">Suara Masuk (0) suara</h1>
+                <h1 class="quick-count__suara-masuk">Total Suara Masuk (<?= $total_suara;?>) suara</h1>
             </div>
         </section>
     </main>

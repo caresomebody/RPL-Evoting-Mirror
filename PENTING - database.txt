@@ -7,27 +7,30 @@ CREATE TABLE Pemilih(
     provinsi VARCHAR (100) NOT NULL,
     pin VARCHAR (20) NOT NULL,
     foto VARCHAR(100) NOT NULL,
+    status_memilih BOOLEAN NOT NULL,
     CONSTRAINT pemilih_nik_pk PRIMARY KEY(nik)
 );
 
+CREATE TABLE Paslon(
+    no_urut VARCHAR(4) NOT NULL,
+    nama_lengkap VARCHAR(50),
+    pilihan_jabatan VARCHAR(20),
+    visi_misi VARCHAR(500),
+    nama_partai VARCHAR (20),
+    jumlah_suara INT NOT NULL,
+    foto VARCHAR (100),
+    CONSTRAINT paslon_no_urut_pk PRIMARY KEY(no_urut)
+);
+
+CREATE TABLE Quick_Count(
+    id_pemilu VARCHAR(8) NOT NULL,
+    no_urut INT NOT NULL,
+    total_suara VARCHAR(20),
+    jumlah_tps VARCHAR(20),
+    CONSTRAINT quick_count_id_pemilu_pk PRIMARY KEY(id_pemilu)
+);
+
 /* =================BELOM FIX JANGAN DULU DI-CREATE================= */
-
-CREATE TABLE PASLON(
-    NoUrut VARCHAR(4) NOT NULL,
-    NamaLengkap VARCHAR(50),
-    Pilihan_Jabatan VARCHAR(20),
-    Visi_Misi VARCHAR(500),
-    Partai VARCHAR (20),
-    CONSTRAINT Palon_NoUrut_PK PRIMARY KEY(NoUrut)
-);
-
-CREATE TABLE QUICK QOUNT(
-    IDPemilu VARCHAR(8) NOT NULL,
-    NoUrut VARCHAR(4),
-    JumlahSuara VARCHAR(20),
-    JumlahTPS VARCHAR(20),
-    CONSTRAINT QUICK QOUNT_IDPemilu_PK PRIMARY KEY(IDPemilu)
-);
 
 CREATE TABLE BERITA PASLON(
     IDBerita VARCHAR(8) NOT NULL,

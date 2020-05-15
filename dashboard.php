@@ -98,7 +98,7 @@
                         <td class="text">NIK</td>
                     </tr>
                     <tr>
-                        <td><input value="<?= $user['nik'];?>" name="nik" type="text" placeholder="" class="input" maxlength="100"></td>
+                        <td><input value="<?= $user['nik'];?>" name="nik" type="text" placeholder="" class="input nik--disabled" maxlength="100" ></td>
                     </tr>
                     <tr>
                         <td class="text">Nama Lengkap</td>
