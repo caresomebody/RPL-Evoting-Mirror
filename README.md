@@ -44,6 +44,8 @@ Target dari aplikasi kami adalah masyarakat yang sudah memenuhi syarat untuku me
 
 # Gantt Chart
 ![image](https://user-images.githubusercontent.com/48080443/82117376-bd4dbb80-9799-11ea-94d7-fc3829b4b669.png)
+
+![Team Gantt](https://user-images.githubusercontent.com/48080443/82117761-a492d500-979c-11ea-90e3-e7c698111b1e.png)
 # ERD
 
 # Hasil Implementasi Perangkat Lunak
