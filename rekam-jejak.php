@@ -1,3 +1,32 @@
+<?php 
+    session_start();
+    
+    include("evoting-config.php");
+    include("evoting-functions.php");
+    if (isset($_GET["state"])) {
+        $nik = $_GET["nik"];
+        $user = getUser($nik);
+        $state = true;
+    } else {
+        $state = false;
+    }
+// Get Paslon
+    $noUrut = [1, 2, 3];
+    $paslon = [];
+    foreach ($noUrut as $n) {
+        $paslon[] = getPaslon($n);
+    }
+    $nou;
+    if (isset($_GET["nou"])) $nou = $_GET["nou"] - 1;
+    $pas = $paslon["$nou"];
+    $no_j = $nou + 1;
+    // var_dump($paslon["$nou"]["nama_lengkap"]);
+// GET Berita
+    $news = file_get_contents("news-api/json/no-urut-0$no_j.json");
+    $news = json_decode($news, true);
+    $news = $news['articles'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,11 +44,16 @@
     <header>
         <nav>
             <ul class="nav__ul">
+            <?php if ($state) : ?>
+                <li class="nav__li"><img class="nav__img" src="./assets/pictures/logo-copas.png" alt="Logo Copas"></li>
+                <li class="nav__li"><a class="nav__a" href="dashboard.php?nik=<?= $nik;?>">Kembali ke Dashboard</a></li>
+            <?php else : ?>
                 <li class="nav__li"><img class="nav__img" src="./assets/pictures/logo-copas.png" alt="Logo Copas"></li>
                 <li class=" nav__li"><a class="nav__a" href="index.php">Beranda</a></li>
                 <li class="nav__li"><a class="nav__a" href="quick-count.php">Quick Count</a></li>
                 <li class="nav__li"><a class="nav__a" href="bantuan.php">Bantuan</a></li>
                 <li class="nav__li"><a class="nav__a" href="login.php">Masuk</a></li>
+            <?php endif ; ?>
             </ul>
         </nav>
     </header>
@@ -30,62 +64,36 @@
             </div>
             <div class="rekam-jejak__paslon-wrapper">
                 <div class="rekam-jejak__paslon">
-                    <img src="./assets/pictures/dummy01.jpg" alt="Dummy Pictures" width="80">
-                    <h2 class="rekam-jeak__no">01</h2>
-                    <h3 class="rekam-jejak__nama">Lorem - Ipsum</h3>
-                </div>
-                <div class="rekam-jejak__paslon">
-                    <img src="./assets/pictures/dummy01.jpg" alt="Dummy Pictures" width="80">
-                    <h2 class="rekam-jeak__no">01</h2>
-                    <h3 class="rekam-jejak__nama">Lorem - Ipsum</h3>
-                </div>
-                <div class="rekam-jejak__paslon">
-                    <img src="./assets/pictures/dummy01.jpg" alt="Dummy Pictures" width="80">
-                    <h2 class="rekam-jeak__no">01</h2>
-                    <h3 class="rekam-jejak__nama">Lorem - Ipsum</h3>
+                    <img src="./assets/pictures/<?= $pas['foto']; ?>" alt="Dummy Pictures" width="80">
+                    <h2 class="rekam-jeak__no"><?= "0".$pas["no_urut"]; ?></h2>
+                    <h3 class="rekam-jejak__nama"><?= $pas["nama_lengkap"]; ?></h3>
                 </div>
             </div>
         </section>
         <section class="berita">
-            <div class="berita__container">
+            <?php $index = 0; ?>
+            <?php foreach($news as $berita) : ?>
+                <div class="berita__container">
                 <div class="berita__item">
-                    <img class="berita__banner" src="./assets/pictures/dummy01.jpg" alt="Dummy Image" width="200">
+                    <img class="berita__banner" src="./assets/pictures/<?= $berita['img'];?>" alt="Dummy Image" width="200">
                 </div>
                 <div class="berita__item">
-                    <h1 class="berita__title">LOREM-IPSUM</h1>
-                    <h2 class="berita__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, quidem!</h2>
-                    <p class="berita__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione excepturi, magni harum ab quasi, fuga cumque, eius explicabo dolorem aperiam blanditiis incidunt a doloremque iure culpa optio quas sint numquam. Accusamus odio tenetur ea harum? Nemo eum dolorum officiis, necessitatibus error beatae, iste et sequi sit recusandae atque, laborum maxime praesentium? Ad qui libero quibusdam vero accusantium nihil impedit voluptatibus dicta quisquam aliquid amet dolorem dolore modi nesciunt blanditiis laudantium, architecto quae? Dolore blanditiis facilis, aliquam consequuntur fuga laudantium assumenda earum eligendi rem quos minus, amet ullam excepturi exercitationem commodi aspernatur tempore aperiam atque porro dolores rerum soluta nemo natus?
-                    </p>
+                    <h1 class="berita__title"><?= $berita['title']; ?></h1>
+                    <h2 class="berita__subtitle"><?= $berita['publishedAt'];?></h2>
+                    <h2 class="berita__subtitle"><?= $berita['source'];?></h2>
                     <br>
-                    <a href="detail-rekam-jejak.php" class="berita__link">Selengkapnya</a>
+                    <p class="berita__para"><?= $berita['content'];?></p>
+                    <br>
+                    <?php if ($state) : ?>
+                    <a href="detail-rekam-jejak.php?nik=<?= $nik;?>&state=<?= $state;?>&nou=<?= $nou;?>&index=<?= $index;?>" class="berita__link">Selengkapnya</a>
+                    <?php else : ?>
+                    <a href="detail-rekam-jejak.php?nou=<?= $nou;?>&index=<?= $index;?>" class="berita__link">Selengkapnya</a>
+                    <?php endif; ?>
                 </div>
             </div>
-            <div class="berita__container">
-                <div class="berita__item">
-                    <img class="berita__banner" src="./assets/pictures/dummy01.jpg" alt="Dummy Image" width="200">
-                </div>
-                <div class="berita__item">
-                    <h1 class="berita__title">LOREM-IPSUM</h1>
-                    <h2 class="berita__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, quidem!</h2>
-                    <p class="berita__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione excepturi, magni harum ab quasi, fuga cumque, eius explicabo dolorem aperiam blanditiis incidunt a doloremque iure culpa optio quas sint numquam. Accusamus odio tenetur ea harum? Nemo eum dolorum officiis, necessitatibus error beatae, iste et sequi sit recusandae atque, laborum maxime praesentium? Ad qui libero quibusdam vero accusantium nihil impedit voluptatibus dicta quisquam aliquid amet dolorem dolore modi nesciunt blanditiis laudantium, architecto quae? Dolore blanditiis facilis, aliquam consequuntur fuga laudantium assumenda earum eligendi rem quos minus, amet ullam excepturi exercitationem commodi aspernatur tempore aperiam atque porro dolores rerum soluta nemo natus?</p>
-                    <br>
-                    <a href="#" class="berita__link">Selengkapnya</a>
-                </div>
-            </div>
-            <div class="berita__container">
-                <div class="berita__item">
-                    <img class="berita__banner" src="./assets/pictures/dummy01.jpg" alt="Dummy Image" width="200">
-                </div>
-                <div class="berita__item">
-                    <h1 class="berita__title">LOREM-IPSUM</h1>
-                    <h2 class="berita__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, quidem!</h2>
-                    <p class="berita__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione excepturi, magni harum ab quasi, fuga cumque, eius explicabo dolorem aperiam blanditiis incidunt a doloremque iure culpa optio quas sint numquam. Accusamus odio tenetur ea harum? Nemo eum dolorum officiis, necessitatibus error beatae, iste et sequi sit recusandae atque, laborum maxime praesentium? Ad qui libero quibusdam vero accusantium nihil impedit voluptatibus dicta quisquam aliquid amet dolorem dolore modi nesciunt blanditiis laudantium, architecto quae? Dolore blanditiis facilis, aliquam consequuntur fuga laudantium assumenda earum eligendi rem quos minus, amet ullam excepturi exercitationem commodi aspernatur tempore aperiam atque porro dolores rerum soluta nemo natus?
-                    <br>
-                </p>
-                <a href="#" class="berita__link">Selengkapnya</a>
-                </div>
-            </div>
-        </section>`
+            <?php $index++; ?>
+            <?php endforeach; ?>
+        </section>
     </main>
     <footer>
         <h3>

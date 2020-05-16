@@ -42,7 +42,7 @@
         $query = pg_query("INSERT INTO pemilih 
         (nik, nama_lengkap, tanggal_lahir, kota, provinsi, pin, foto, status_memilih) VALUES
         ('$nik', '$nama_lengkap', '$tanggal_lahir', '$kota', '$provinsi', '$pin', '', 'false')");
-        if( $query==TRUE ) {
+        if( $query == true ) {
             return 1;
         } else {
             return 0;
@@ -71,7 +71,6 @@
             exit;
         }
     }
-    
     // ===========FUNGSI LOGOUT==============
     function logout () {
         if (isset($_POST["logout"])) {
@@ -108,7 +107,7 @@
         }
     }
 
-    // FUNGSI UPDATE FOTO
+    // ===========FUNGSI UPLOAD FOTO ==============
 
     function updateFoto ($nik) {
         global $db;
@@ -136,6 +135,48 @@
         foto = '$nama' 
         WHERE nik = '$nik'");
         if( $query==TRUE ) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+    // ===========FUNGSI TAMBAH KOMENTAR ==============
+    function tambahKomentar ($nik) {
+        global $db;
+        $konten = $_POST["konten"]; 
+        $waktu = $_POST["waktu"];
+        $query = pg_query("INSERT INTO komentar 
+        (nik, waktu, konten) VALUES
+        ('$nik', '$waktu', '$konten')");
+        if ($query == true) return 1;
+        else return 0;
+    }
+    function getSemuaKomentar ($nik) {
+        global $db;
+        $query = pg_query("SELECT * FROM paslon 
+        WHERE nik = '$nik'");
+        $komentar = pg_fetch_assoc($query);
+        return $komentar;
+    }
+
+     // ===========FUNGSI SUNTING DAN HAPUS KOMENTAR ==============
+    function updateKomentar ($id) {
+        global $db;
+        $content = $_POST['konten_komentar'];
+        $query = pg_query("UPDATE komentar SET
+        konten = '$content'
+        WHERE id_komentar = '$id' ");
+        if( $query == TRUE ) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+    function hapusKomentar ($id) {
+        global $db;
+        $query = pg_query("DELETE FROM komentar WHERE id_komentar = '$id' ");
+        if( $query == TRUE ) {
             return 1;
         } else {
             return 0;

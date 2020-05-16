@@ -9,6 +9,11 @@
    } else {
        $state = false;
    }
+    $noUrut = [1, 2, 3];
+    $paslons = [];
+    foreach ($noUrut as $n) {
+        $paslons[] = getPaslon($n);
+    }
    if ( isset($_POST["coblos"]) ) {
        echo "<script>alert('Login terlebih dahulu untuk melukan pemilihan')</script>";
    }
@@ -57,30 +62,30 @@
             </div>
         </section>
         <section class="paslon">
-            <?php for ($i = 1; $i <= 3; $i++) : ?>
+            <?php foreach ($paslons as $paslon) : ?>
                 <article class="paslon__item">
                     <div class="paslon__description">
-                        <img class="paslon__foto" src="./assets/pictures/dummy01.jpg" alt="Dummy Picture" width="200">
-                        <h3 class="paslon__no-urut"><?= "0" . $i; ?></h3>
-                        <h3 class="paslon__nama">Lorem-Ipsum</h3>
+                        <img class="paslon__foto" src="./assets/pictures/<?= $paslon['foto'];?>" alt="Dummy Picture" width="200">
+                        <h3 class="paslon__no-urut"><?= "0".$paslon["no_urut"]; ?></h3>
+                        <h3 class="paslon__nama"><?= $paslon["nama_lengkap"]; ?></h3>
                         <h3 class="paslon__visi-misi">Visi dan Misi</h3>
-                        <p class="paslon__visi-misi-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nostrum? Maxime provident, repellendus atque quia ipsam ducimus, deserunt quasi odit culpa cum ea officia vitae dolorem ullam odio autem labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint aut. Maxime enim at libero natus laudantium ipsam maiores, impedit perspiciatis similique dolorem quisquam dolor expedita doloribus et illo. Cum.</p>
+                        <p class="paslon__visi-misi-content"><?= $paslon["visi_misi"]; ?></p>
                     </div>
                     <?php if (isset($_SESSION["login"])) : ?>
                     <form action="quick-count.php?nik=<?= $nik;?>&state=<?= $state;?>" class="paslon__actions" method="post">
-                        <a href="rekam-jejak.php" class="paslon__btn-action" type="submit">REKAM JEJAK</a>
-                        <input type="text" name="no_urut" value="<?= $i;?>" hidden>
+                        <a href="rekam-jejak.php?nik=<?= $nik;?>&state=<?= $state;?>&nou=<?= $paslon["no_urut"];?>" class="paslon__btn-action" type="submit">REKAM JEJAK</a>
+                        <input type="text" name="no_urut" value="<?= $paslon["no_urut"];?>" hidden>
                         <button name="coblos" class="paslon__btn-action" type="submit">COBLOS</button>
                     </form>
                     <?php else : ?>
                     <form action="" class="paslon__actions" method="post">
-                        <a href="rekam-jejak.php" class="paslon__btn-action" type="submit">REKAM JEJAK</a>
-                        <input type="text" name="no_urut" value="<?= $i;?>" hidden>
+                        <a href="rekam-jejak.php?nou=<?= $paslon["no_urut"];?>" class="paslon__btn-action" type="submit">REKAM JEJAK</a>
+                        <input type="text" name="no_urut" value="<?= $paslon["no_urut"];?>" hidden>
                         <button name="coblos" class="paslon__btn-action" type="submit">COBLOS</button>
                     </form>
                     <?php endif; ?>
                 </article>
-            <?php endfor; ?>
+            <?php endforeach; ?>
         </section>
     </main>
     <footer>

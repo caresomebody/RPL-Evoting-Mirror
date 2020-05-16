@@ -1,0 +1,31 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "source": "Madep News",
+            "author": "Nuruk Akbar",
+            "title": "Jajan sekarang sedang belusukan di Jakarta",
+            "img": "dummy04.jpg",
+            "publishedAt": "01 Mei 2019",
+            "content": "Jakarta, ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nam eos voluptatem fuga quos perfe"
+        },
+        {
+            "id": 2,
+            "source": "Santuy News",
+            "author": "Akbar Sanas",
+            "title": "Jajan sekarang sedang belusukan di Bandung",
+            "img": "dummy05.jpg",
+            "publishedAt": "01 Mei 1999",
+            "content": "Bandung Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nam eos voluptatem fuga quos perfe"
+        },
+        {
+            "id": 3,
+            "source": "Gercep News",
+            "author": "nufik Sanas",
+            "title": "Jajan sekarang sedang belusukan di Sumedang",
+            "img": "dummy06.jpg",
+            "publishedAt": "01 Mei 10000",
+            "content": "Sumedang Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nam eos voluptatem fuga quos perfe"
+        }
+    ]
+}

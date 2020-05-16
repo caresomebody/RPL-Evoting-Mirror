@@ -1,4 +1,9 @@
 /* =====================UDAH FIX BOLEH DI-CREATE===================== */
+
+/*
+*** JANGAN LUPA SEBELUM CREATE TABLE DI BAWAH, DELETE SEMUA TABLE YANG ADA DI KOMPUTER KALIAN ***
+*/
+
 CREATE TABLE Pemilih(
     nik VARCHAR(20) NOT NULL,
     nama_lengkap VARCHAR(255) NOT NULL,
@@ -30,15 +35,17 @@ CREATE TABLE Quick_Count(
     CONSTRAINT quick_count_id_pemilu_pk PRIMARY KEY(id_pemilu)
 );
 
+CREATE TABLE Komentar(
+    nik VARCHAR(20) NOT NULL,
+    id_komentar SERIAL PRIMARY KEY,
+    waktu VARCHAR(50),
+    konten VARCHAR (225),
+    CONSTRAINT nik_pemilih_fk FOREIGN KEY(nik) REFERENCES Pemilih(nik)
+);
+
 /* =================BELOM FIX JANGAN DULU DI-CREATE================= */
 
-CREATE TABLE BERITA PASLON(
-    IDBerita VARCHAR(8) NOT NULL,
-    Judul_Berita VARCHAR(20),
-    Waktu_Terbit DATE,
-    Sumber VARCHAR (20),
-    CONSTRAINT BERITA PASLON_IDBerita_PK PRIMARY KEY(IDBerita)
-);
+--- Table Rekam Jejak JANGAN DI CREATE, SOALNYA DIGANTI DENGAN FILE DATA JSON ----
 
 CREATE TABLE REKAM JEJAK(
     IDRekamJejak VARCHAR(8) NOT NULL,
@@ -47,5 +54,4 @@ CREATE TABLE REKAM JEJAK(
     Harta_Kekayaan VARCHAR(20),
     CONSTRAINT REKAM JEJAK_IDRekamJejak_PK PRIMARY KEY(IDRekamJejak)
 );    
-
 
