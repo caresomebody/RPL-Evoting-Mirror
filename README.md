@@ -11,28 +11,19 @@ Perkembangan teknologi yang sangat pesat membuat orang-orang saat ini berlomba-l
 2.	Mempersingkat waktu perhitungan suara oleh pemerintah .
 3.	Meminimalkan kecurangan pada pemilu.
 # Ruang Lingkup
-Perangkat Keras
-1.	Processor : 1 gigahertz (GHz)
-2.	Graphics Card : DirectX 9 dengan drive WDDM 1.0
-3.	RAM : 1 GB
-
-Perangkat Lunak
-1.	Framework : Vue Js dan Laravel
-2.	Database : MySQL
-3.	Server : Apache
-4.	Text Editor/IDE : Visual Studio Code atau Sublime Text 3 
-
-Lainnya
-1.	Version Control dan Collaboration Platform : Github
-2.	Teknologi : CSS/HTML, Javascript, dan PHP
-
+1. Aplikasi ini harus terhubung dengan internet untuk melakukan pemilihan pasangan calon kepala daerah secara online.
+2. Pemilih lansia harus membiasakan diri dalam menggunakan aplikasi ini.
+3. Pemilih hanya dapat mecoblos pasangan calon kepala daerah satu kali. 
+4  Pemilih dapat melihat dengan cepat perhitungan suara.
 # Deskripsi Perangkat Lunak
-CHOPAS(Choose Paslon) merupakan aplikasi berbasis web yang berguna untuk melakukan pemilihan umum legislatif dan pemilihan umum presiden secara online. CHOPAS memiliki fitur untuk mencoblos, rekam jejak paslon, serta quick count dari pemilihan.
-
+CHOPAS(Choose Paslon) merupakan aplikasi berbasis web yang berguna untuk melakukan  pemilihan kepala daerah secara online. CHOPAS memiliki fitur untuk mencoblos, rekam jejak paslon, berita paslon, serta quick count dari pemilihan.
 # Analisis User
-Target dari aplikasi kami adalah masyarakat yang sudah memenuhi syarat untuku memilih calon kepala daerah. Saat ini, pemilihan dilakukan secara langsung yang masih menggunakan kertas.
-
+Target dari aplikasi kami adalah masyarakat yang sudah memenuhi syarat untuku memilih calon kepala daerah. Saat ini, pemilihan dilakukan secara langsung yang masih menggunakan kertas. Dalam perhitungan suara masih cenderung lama. Masih sering didapatkan kecurangan saat pemilu berlangsung.
 # User Story
+- Sebagai seorang pemilih, saya ingin memcoblos pasangan calon kepala daerah dengan mudah secara online
+- Sebagai seorang pemilih, saya ingin mengetahui rekam jejak dari pasangan calon kepala daerah, seperti profil,pendidikan, dan harta kekayaan.
+- Sebagai seorang pemilih, saya ingin mengetahui berita terbaru mengenai pasangan calon kepala daerah.
+- Sebagai seorang pemilih, saya ingin melihat perhitungan suara secara cepat.
 
 
 # Use Case Diagram
