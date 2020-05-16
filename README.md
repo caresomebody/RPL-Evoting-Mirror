@@ -27,18 +27,22 @@ Target dari aplikasi kami adalah masyarakat yang sudah memenuhi syarat untuku me
 
 
 # Use Case Diagram
-
+![Use Case Diagram](https://user-images.githubusercontent.com/48080443/82125479-644d4a00-97d0-11ea-8b75-72dba25ca488.png)
 
 # Use Case Description 
 
 # Activity Diagram
+![activity 1](https://user-images.githubusercontent.com/48080443/82125507-9068cb00-97d0-11ea-93af-d71289af0638.jpg)
+![ac 2](https://user-images.githubusercontent.com/48080443/82125512-9ced2380-97d0-11ea-94fe-487e139237f1.jpg)
+![ac 3](https://user-images.githubusercontent.com/48080443/82125529-b42c1100-97d0-11ea-978f-82621b70f174.jpg)
+![ac 4](https://user-images.githubusercontent.com/48080443/82125531-b7bf9800-97d0-11ea-900a-e681d8887cc2.jpg)
 
 # Gantt Chart
 ![image](https://user-images.githubusercontent.com/48080443/82117376-bd4dbb80-9799-11ea-94d7-fc3829b4b669.png)
 
 ![Team Gantt](https://user-images.githubusercontent.com/48080443/82117761-a492d500-979c-11ea-90e3-e7c698111b1e.png)
 # ERD
-
+![erd](https://user-images.githubusercontent.com/48080443/82125449-3536d880-97d0-11ea-906e-0b44fa480a64.png)
 # Hasil Implementasi Perangkat Lunak
 
 
