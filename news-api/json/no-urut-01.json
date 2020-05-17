@@ -2,30 +2,48 @@
     "articles": [
         {
             "id": 1,
-            "source": "Madep News",
-            "author": "Nuruk Akbar",
-            "title": "Jujun sekarang sedang belusukan di Jakarta",
+            "source": "IPB Today",
+            "author": "Ali Naufal Ammarullah",
+            "title": "Jujun sekarang belusukan di Jakarta",
             "img": "dummy01.jpg",
-            "publishedAt": "01 Mei 2019",
-            "content": "Jakarta, ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nam eos voluptatem fuga quos perfe"
+            "publishedAt": "26 Mei 2020",
+            "content": "Jakarta - Dalam diskusi yang bertajuk 'Memotret Presiden Lebih Dekat', Asisten Komandan Pasukan Pengamanan Presiden (Paspampres), Kolonel Inf Gogor menceritakan bahwa dia acap kali mendapat 'cap parnoan' oleh masyarakat karena sikapnya saat menjaga Presiden Joko Widodo (Jokowi). Dalam kacamata Paspampres, para personel memang harus melihat semua orang sebagai sebuah ancaman."
         },
         {
             "id": 2,
-            "source": "Santuy News",
-            "author": "Akbar Sanas",
+            "source": "IPB Today",
+            "author": "Mutia Marcha Fatika",
             "title": "Jujun sekarang sedang belusukan di Bandung",
             "img": "dummy02.jpg",
-            "publishedAt": "01 Mei 1999",
-            "content": "Bandung Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nam eos voluptatem fuga quos perfe"
+            "publishedAt": "15 Maret 2020",
+            "content": "Jakarta - Di hari yang sama, Senin (25/2) kedua paslon terlihat sibuk melakukan aktivitas. Jokowi tampak blusukan di Pasar Cilacap sementara Sandiaga asyik makan seafood. Mengawali pekan, Jokowi diagendakan menyambangi Cilacap untuk beberapa kegiatan. Salah satunya adalah meresmikan Pembangkit Listrik Tenaga Uap Cilacap, tapi diluar agenda itu Jokowi lagi-lagi blusukan secara spontan."
         },
         {
             "id": 3,
-            "source": "Gercep News",
+            "source": "Radar Bogor",
             "author": "nufik Sanas",
             "title": "Jujun sekarang sedang belusukan di Sumedang",
             "img": "dummy03.jpg",
             "publishedAt": "01 Mei 10000",
             "content": "Sumedang Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nam eos voluptatem fuga quos perfe"
+        },
+        {
+            "id": 4,
+            "source": "Radar Bogor",
+            "author": "nufik Sanas",
+            "title": "Jujun sekarang sedang belusukan di Sumedang",
+            "img": "dummy03.jpg",
+            "publishedAt": "01 Mei 10000",
+            "content": "Sumedang Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nam eos voluptatem fuga quos perfe"
+        },
+        {
+            "id": 5,
+            "source": "IPB Today",
+            "author": "Akbar Sanas",
+            "title": "Jujun sekarang sedang belusukan di Bandung",
+            "img": "dummy02.jpg",
+            "publishedAt": "01 Mei 1999",
+            "content": "Bandung Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nam eos voluptatem fuga quos perfe"
         }
     ]
 }
