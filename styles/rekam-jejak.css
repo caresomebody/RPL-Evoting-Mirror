@@ -30,9 +30,7 @@ body {
 .rekam-jejak__paslon > * {
     margin: 0 0 1rem 0;
 }
-.rekam-jejak__paslon img{
-    border-radius: 50%;
-}
+
 .berita {
     color: #d90000;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

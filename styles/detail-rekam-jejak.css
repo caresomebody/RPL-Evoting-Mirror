@@ -20,15 +20,20 @@
     /* background: salmon; */
     width: 96rem;
     margin: 0 auto 5rem;
+    border-radius: 1.4rem;
+    border-color: #d90000;
 }
 .comments__title {
     border: 0.2rem solid #d90000;
     padding: 1rem;
     margin: 0 0 2.5rem 0;
+    border-radius: 5px;
+    color: #d90000;
 }
 .comments__field-wrapper {
     border: 0.2rem solid #d90000;
     padding: 1rem;
+    border-radius: 1.4rem;
 }
 .comments__field {
     font-size: 2.4rem;
@@ -37,6 +42,7 @@
     padding: 1rem;
     border: 0;
     outline: none;
+    border-radius: 1.4rem;
 }
 .comments__btn-wrapper {
     text-align: right;

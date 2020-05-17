@@ -55,7 +55,7 @@
         <section class="banner">
             <div class="banner__description">
                 <h1 class="banner__title">Pemilu Online</h1>
-                <p class="banner__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates mollitia tenetur excepturi! Delectus animi blanditiis, voluptatum facilis, aliquam ex, repellendus quae consequatur dicta suscipit vel quibusdam atque adipisci consequuntur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas quos delectus quis, culpa sed quisquam minima, expedita mollitia, velit earum totam omnis obcaecati natus veritatis beatae rem incidunt aperiam voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, rem. Dolores consectetur saepe fugiat? Facere, laborum a? Expedita praesentium quod perferendis, quae vitae suscipit sunt odio, quia libero provident voluptate. </p>
+                <p class="banner__paragraph">Selamat datang di CHOPAS! CHOPAS merupakan platform pemilihan umum secara online yang didesain khusus untuk pemilihan kepala daerah. Disini kalian bisa melihat rekam jejak dari paslon yang ada serta memberi komentar terhadap rekam jejak mereka. Silahkan mendaftar terlebih dahulu untuk bisa mencoblos pasien yang ada. </p>
             </div>
             <div class="banner__hero">
                 <img src="./assets/pictures/vector-portal.svg" alt="Logo Pemilu" width="480">
