@@ -20,12 +20,30 @@
         },
         {
             "id": 3,
-            "source": "Gercep News",
+            "source": "Radar Bogor",
             "author": "nufik Sanas",
-            "title": "Jejen sekarang sedang belusukan di Sumedang",
-            "img": "dummy09.jpeg",
+            "title": "Jujun sekarang sedang belusukan di Sumedang",
+            "img": "dummy03.jpg",
             "publishedAt": "01 Mei 10000",
             "content": "Sumedang Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nam eos voluptatem fuga quos perfe"
+        },
+        {
+            "id": 4,
+            "source": "Radar Bogor",
+            "author": "nufik Sanas",
+            "title": "Jujun sekarang sedang belusukan di Sumedang",
+            "img": "dummy03.jpg",
+            "publishedAt": "01 Mei 10000",
+            "content": "Sumedang Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nam eos voluptatem fuga quos perfe"
+        },
+        {
+            "id": 5,
+            "source": "IPB Today",
+            "author": "Akbar Sanas",
+            "title": "Jujun sekarang sedang belusukan di Bandung",
+            "img": "dummy02.jpg",
+            "publishedAt": "01 Mei 1999",
+            "content": "Bandung Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quo nam eos voluptatem fuga quos perfe"
         }
     ]
 }

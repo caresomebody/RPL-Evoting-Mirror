@@ -19,7 +19,7 @@ CREATE TABLE Pemilih(
 CREATE TABLE Paslon(
     no_urut VARCHAR(4) NOT NULL,
     nama_lengkap VARCHAR(50),
-    pilihan_jabatan VARCHAR(20),
+    pilihan_jabatan VARCHAR(50),
     visi_misi VARCHAR(500),
     nama_partai VARCHAR (20),
     jumlah_suara INT NOT NULL,
@@ -32,21 +32,21 @@ CREATE TABLE Paslon(
 INSERT INTO paslon 
 (no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
 VALUES 
-('1', 'Ricardo', 'Kepala Daerah', 'Memajukan', 'Golker', 0, 'dummy01.jpg');
+('1', 'Ali dan Ojan', 'Kepala dan Wakil Daerah', 'Alegi Kemunduran, Mendorong Kemajuan', 'Golker', 0, 'paslon01.jpg');
 
 /* Paslon 02 */
 
 INSERT INTO paslon 
 (no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
 VALUES 
-('2', 'Sutandar', 'Kepala Daerah', 'Memundurkan', 'Demokratos', 0, 'dummy02.jpg');
+('2', 'Nur Laely dan Nur Ul', 'Kepala dan Wakil Daerah', 'Pecintaan tak akan pernah mati', 'Demokratos', 0, 'paslon02.jpg');
 
 /* Paslon 03 */
 
 INSERT INTO paslon 
 (no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
 VALUES 
-('3', 'Parman', 'Kepala Daerah', 'Memiringkan', 'PDKALE', 0, 'dummy03.jpg');
+('3', 'Pijan dan Naufal', 'Kepala dan Wakil Kepala Daerah', 'Menjadi YES MAN adalah jalan ninjaku', 'PDKALE', 0, 'paslon03.jpg');
 
 CREATE TABLE Quick_Count(
     id_pemilu VARCHAR(8) NOT NULL,

@@ -64,7 +64,7 @@
             </div>
             <div class="rekam-jejak__paslon-wrapper">
                 <div class="rekam-jejak__paslon">
-                    <img src="./assets/pictures/<?= $pas['foto']; ?>" alt="Dummy Pictures" width="80">
+                    <img src="./assets/pictures/<?= $pas['foto']; ?>" alt="Dummy Pictures" width="250">
                     <h2 class="rekam-jeak__no"><?= "0".$pas["no_urut"]; ?></h2>
                     <h3 class="rekam-jejak__nama"><?= $pas["nama_lengkap"]; ?></h3>
                 </div>
