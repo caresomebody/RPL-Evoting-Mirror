@@ -89,5 +89,13 @@ CREATE TABLE BERITA PASLON(
     sumber VARCHAR(20),
     komentar VARCHAR (500),
     foto VARCHAR (100),
-    CONSTRAINT REKAM JEJAK_idBeritaPaslon_PK PRIMARY KEY(idBeritaPaslon)
+    CONSTRAINT BERITA PASLON_idBeritaPaslon_PK PRIMARY KEY(idBeritaPaslon)
 );    
+
+CREATE TABLE Admin(
+    idAdmin VARCHAR(8) NOT NULL,
+    username VARCHAR (50) NOT NULL,
+    pin VARCHAR(20),
+    foto VARCHAR(100),
+    CONSTRAINT Admin_idAdmin_PK PRIMARY KEY(idAdmin)
+);
