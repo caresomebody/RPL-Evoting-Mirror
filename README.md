@@ -53,10 +53,25 @@ Target dari aplikasi kami adalah masyarakat yang sudah memenuhi syarat untuku me
 # ERD
 ![erd](https://user-images.githubusercontent.com/48080443/82125449-3536d880-97d0-11ea-906e-0b44fa480a64.png)
 # Hasil Implementasi Perangkat Lunak
-
-
-
-
-
-
-
+## Landing Page
+![Landing Page](https://user-images.githubusercontent.com/48080443/82151772-835ae300-9887-11ea-896b-208a208a6d78.png)
+![image](https://user-images.githubusercontent.com/48080443/82151783-91a8ff00-9887-11ea-9664-ddd81893d42f.png)
+## Sign In
+![image](https://user-images.githubusercontent.com/48080443/82151837-d2a11380-9887-11ea-9e7a-bc5d645f89e0.png)
+## Daftar
+![download (35)](https://user-images.githubusercontent.com/48080443/82151872-02501b80-9888-11ea-8df8-45f1606d0a86.png)
+## Dashboard
+![Screenshot (492)](https://user-images.githubusercontent.com/48080443/82151923-5529d300-9888-11ea-8774-bc3ca9536b1c.png)
+![image](https://user-images.githubusercontent.com/48080443/82151942-77bbec00-9888-11ea-84a0-327ee60f21f1.png)
+![image](https://user-images.githubusercontent.com/48080443/82151956-84d8db00-9888-11ea-8a4b-e8f72a500a9a.png)
+## Rekam Jejak
+![download (36)](https://user-images.githubusercontent.com/48080443/82151979-a20da980-9888-11ea-8089-62a6ff4ee4c5.png)
+## Detail Rekam Jejak
+![download (37)](https://user-images.githubusercontent.com/48080443/82151999-c4072c00-9888-11ea-9fac-9679c796080f.png)
+## Fitur Komentar
+![image](https://user-images.githubusercontent.com/48080443/82152027-e7ca7200-9888-11ea-95ed-122505debb50.png)
+## Bantuan
+![image](https://user-images.githubusercontent.com/48080443/82152056-0597d700-9889-11ea-9beb-c408e3d713fb.png)
+## Coblos dan Quick Count
+![image](https://user-images.githubusercontent.com/48080443/82152167-adada000-9889-11ea-84e7-a59cf1d51d29.png)
+![image](https://user-images.githubusercontent.com/48080443/82152155-9c649380-9889-11ea-84e2-e2996ea99734.png)
