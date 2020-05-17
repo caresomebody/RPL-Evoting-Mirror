@@ -30,6 +30,10 @@ Target dari aplikasi kami adalah masyarakat yang sudah memenuhi syarat untuku me
 ![Use Case Diagram](https://user-images.githubusercontent.com/48080443/82125479-644d4a00-97d0-11ea-8b75-72dba25ca488.png)
 
 # Use Case Description 
+![Screenshot (483)](https://user-images.githubusercontent.com/48080443/82151608-7984b000-9886-11ea-8469-2e659314468b.png)
+![Screenshot (484)](https://user-images.githubusercontent.com/48080443/82151625-97521500-9886-11ea-936a-a959055f0c3c.png)
+![Screenshot (485)](https://user-images.githubusercontent.com/48080443/82151664-bf417880-9886-11ea-8a4b-7e9bc9ca5cf4.png)
+![Screenshot (486)](https://user-images.githubusercontent.com/48080443/82151672-ca94a400-9886-11ea-9f2e-75f613990f49.png)
 
 # Activity Diagram
 ## Proses Verifikasi Data Pemilihan Online
