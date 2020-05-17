@@ -5,6 +5,7 @@
 */
 
 CREATE TABLE Pemilih(
+    idPemilih VARCHAR (8) NOT NULL
     nik VARCHAR(20) NOT NULL,
     nama_lengkap VARCHAR(255) NOT NULL,
     tanggal_lahir VARCHAR(100) NOT NULL,
@@ -13,18 +14,19 @@ CREATE TABLE Pemilih(
     pin VARCHAR (20) NOT NULL,
     foto VARCHAR(100) NOT NULL,
     status_memilih BOOLEAN NOT NULL,
-    CONSTRAINT pemilih_nik_pk PRIMARY KEY(nik)
+    CONSTRAINT pemilih_idPemilih_pk PRIMARY KEY(idPemilih)
 );
 
 CREATE TABLE Paslon(
+    idPaslon VARCHAR (8) NOT NULL,
     no_urut VARCHAR(4) NOT NULL,
+    foto VARCHAR (100),
     nama_lengkap VARCHAR(50),
     pilihan_jabatan VARCHAR(50),
     visi_misi VARCHAR(500),
     nama_partai VARCHAR (20),
     jumlah_suara INT NOT NULL,
-    foto VARCHAR (100),
-    CONSTRAINT paslon_no_urut_pk PRIMARY KEY(no_urut)
+    CONSTRAINT paslon_idPaslon_pk PRIMARY KEY(no_urut)
 );
 
 /* Paslon 01 */
@@ -50,6 +52,7 @@ VALUES
 
 CREATE TABLE Quick_Count(
     id_pemilu VARCHAR(8) NOT NULL,
+    idPaslon VARCHAR(8) NOT NULL,
     no_urut INT NOT NULL,
     total_suara VARCHAR(20),
     jumlah_tps VARCHAR(20),
@@ -70,10 +73,21 @@ CREATE TABLE Komentar(
 --- Table Rekam Jejak JANGAN DI CREATE, SOALNYA DIGANTI DENGAN FILE DATA JSON ----
 
 CREATE TABLE REKAM JEJAK(
-    IDRekamJejak VARCHAR(8) NOT NULL,
+    idRekamJejak VARCHAR(8) NOT NULL,
+    idPaslon VARCHAR (8) NOT NULL,
     Profil VARCHAR(500),
     Pendidikan VARCHAR(500),
     Harta_Kekayaan VARCHAR(20),
-    CONSTRAINT REKAM JEJAK_IDRekamJejak_PK PRIMARY KEY(IDRekamJejak)
+    CONSTRAINT REKAM JEJAK_idRekamJejak_PK PRIMARY KEY(idRekamJejak)
 );    
 
+CREATE TABLE BERITA PASLON(
+    idBeritaPaslon VARCHAR(8) NOT NULL,
+    idPaslon VARCHAR (8) NOT NULL,
+    judul_berita VARCHAR(20),
+    waktu_terbit DATE,
+    sumber VARCHAR(20),
+    komentar VARCHAR (500),
+    foto VARCHAR (100),
+    CONSTRAINT REKAM JEJAK_idBeritaPaslon_PK PRIMARY KEY(idBeritaPaslon)
+);    
