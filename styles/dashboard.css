@@ -152,6 +152,13 @@ aside {
     width: 380px;
 }
 
+.nav__li button{
+    text-decoration: none;
+    color: #d90000;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
 footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;

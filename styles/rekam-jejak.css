@@ -21,11 +21,14 @@ body {
 }
 .rekam-jejak__paslon {
     text-align: center;
-    border: 0.2rem solid grey;
+    border: 0.2rem solid #d90000;
     flex: 1 1 50rem;
     margin: 1rem;
     border-radius: 2rem;
     padding: 3rem 2rem;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #d90000;
 }
 .rekam-jejak__paslon > * {
     margin: 0 0 1rem 0;

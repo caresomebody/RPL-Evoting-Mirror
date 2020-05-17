@@ -78,7 +78,7 @@
                 <?php foreach($paslon as $p) : ?>
                     <div class="quick-count__paslon">
                         <span class="quick-count__photo-wrapper">
-                            <img src="./assets/pictures/dummy01.jpg" alt="Paslon" class="quick-count__photo" width="100">
+                            <img src="./assets/pictures/<?= $p['foto'];?>" alt="Paslon" class="quick-count__photo" width="100">
                         </span>
                         <h1 class="quick-count__no-urut"><?= "0".$p["no_urut"]; ?></h1>
                         <h2 class="quick-count__nama"><?= $p["nama_lengkap"]; ?></h2>
