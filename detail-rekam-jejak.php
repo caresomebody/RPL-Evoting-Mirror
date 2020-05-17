@@ -123,7 +123,6 @@
               <form action="" method="post">
                     <textarea class="comments__field" placeholder="Tulis komentar Anda di sini..." name="konten" id="comment" cols="30" rows="10" required></textarea>
                     <br>
-                    <input class="ipt-koment" type="text" name="waktu" placeholder="Tanggal Komentar" required>
                     <div class="comments__btn-wrapper">
                         <button name="komentar" class="comments__btn">Kirim</button>
                     </div>

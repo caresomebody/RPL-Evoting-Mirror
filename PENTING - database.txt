@@ -27,6 +27,27 @@ CREATE TABLE Paslon(
     CONSTRAINT paslon_no_urut_pk PRIMARY KEY(no_urut)
 );
 
+/* Paslon 01 */
+
+INSERT INTO paslon 
+(no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
+VALUES 
+('1', 'Ricardo', 'Kepala Daerah', 'Memajukan', 'Golker', 0, 'dummy01.jpg');
+
+/* Paslon 02 */
+
+INSERT INTO paslon 
+(no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
+VALUES 
+('2', 'Sutandar', 'Kepala Daerah', 'Memundurkan', 'Demokratos', 0, 'dummy02.jpg');
+
+/* Paslon 03 */
+
+INSERT INTO paslon 
+(no_urut, nama_lengkap, pilihan_jabatan, visi_misi, nama_partai, jumlah_suara, foto) 
+VALUES 
+('3', 'Parman', 'Kepala Daerah', 'Memiringkan', 'PDKALE', 0, 'dummy03.jpg');
+
 CREATE TABLE Quick_Count(
     id_pemilu VARCHAR(8) NOT NULL,
     no_urut INT NOT NULL,
@@ -42,6 +63,7 @@ CREATE TABLE Komentar(
     konten VARCHAR (225),
     CONSTRAINT nik_pemilih_fk FOREIGN KEY(nik) REFERENCES Pemilih(nik)
 );
+
 
 /* =================BELOM FIX JANGAN DULU DI-CREATE================= */
 

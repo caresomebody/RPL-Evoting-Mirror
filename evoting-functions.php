@@ -140,12 +140,12 @@
             return 0;
         }
     }
-
     // ===========FUNGSI TAMBAH KOMENTAR ==============
     function tambahKomentar ($nik) {
         global $db;
         $konten = $_POST["konten"]; 
-        $waktu = $_POST["waktu"];
+        // $waktu = $_POST["waktu"];
+        $waktu = date('y-m-d');
         $query = pg_query("INSERT INTO komentar 
         (nik, waktu, konten) VALUES
         ('$nik', '$waktu', '$konten')");
