@@ -23,7 +23,8 @@
     } 
     // Get Berita!
     if (isset($_GET["nou"])) {
-        $no_u = $_GET["nou"] + 1;
+        $noState = $_GET["nou"];
+        $no_u = $noState + 1;
     }
     $news = file_get_contents("news-api/json/no-urut-0$no_u.json");
     $news = json_decode($news, true);
@@ -36,15 +37,17 @@
     $query_komentar = pg_query("SELECT * FROM komentar");
     // =========== GET ALL DATABASE ===========//
     if (isset($_POST["sunting"])) {
+        var_dump($no_u);
         if (updateKomentar($_POST["idKomentar"])) {
-            header("Location: detail-rekam-jejak.php?nik=$nik&state=$state&index=$no");
+            header("Location: detail-rekam-jejak.php?nik=$nik&state=$state&nou=$noState&index=$no");
         } else {
             echo "<script>alert('Komentar gagal disunting!')</script>";
         }
     }
     if (isset($_POST["hapus"])) {
+        var_dump($no_u);
         if (hapusKomentar($_POST["idKomentar"])) {
-            header("Location: detail-rekam-jejak.php?nik=$nik&state=$state&index=$no");
+            header("Location: detail-rekam-jejak.php?nik=$nik&state=$state&nou=$noState&index=$no");
         } else {
             echo "<script>alert('Komentar gagal dihapus!')</script>";
         }
