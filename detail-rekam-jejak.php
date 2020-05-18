@@ -37,18 +37,20 @@
     $query_komentar = pg_query("SELECT * FROM komentar");
     // =========== GET ALL DATABASE ===========//
     if (isset($_POST["sunting"])) {
-        var_dump($no_u);
-        if (updateKomentar($_POST["idKomentar"])) {
-            header("Location: detail-rekam-jejak.php?nik=$nik&state=$state&nou=$noState&index=$no");
-        } else {
-            echo "<script>alert('Komentar gagal disunting!')</script>";
+        if ($_SESSION["login"]) {
+            if (updateKomentar($_POST["idKomentar"])) {
+                header("Location: detail-rekam-jejak.php?nik=$nik&state=$state&nou=$noState&index=$no");
+            } else {
+                echo "<script>alert('Komentar gagal disunting!')</script>";
+            }
         }
     }
     if (isset($_POST["hapus"])) {
-        var_dump($no_u);
         if (hapusKomentar($_POST["idKomentar"])) {
+            $statusSunting = true;
             header("Location: detail-rekam-jejak.php?nik=$nik&state=$state&nou=$noState&index=$no");
         } else {
+            $statusSunting = false;
             echo "<script>alert('Komentar gagal dihapus!')</script>";
         }
     }
@@ -155,7 +157,7 @@
                 <p class="info_komen">Komentar Anda : </p>
                 <textarea class="isi_komen" name="konten_komentar" id="10" cols="30" rows="10"><?= $komens['konten'];?></textarea>
                 <div class="user__action">
-                    <button name="sunting" class="user__update">Sunting</button>
+                    <button id="suntingButton" name="sunting" class="user__update">Sunting</button>
                     <button name="hapus" class="user__delete">Hapus</button>
                 </div>
                 <?php else : ?>

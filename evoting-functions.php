@@ -1,5 +1,5 @@
 <?php
-    $db = pg_connect('host=localhost dbname=evoting user=postgres password=admin');
+    $db = pg_connect('host=localhost dbname=evoting user=postgres password=postgres');
     // ===========FUNGSI GET USERS DATA==============
     function getUser ($nik) {
         global $db;
