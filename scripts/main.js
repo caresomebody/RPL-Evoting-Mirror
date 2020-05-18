@@ -12,3 +12,26 @@ window.addEventListener('scroll', function () {
         beritaContainer.style.opacity = '0'
     }
 })
+const formPemilih = document.getElementById('formPemilih')
+const profilePemilih = document.getElementById('profilePemilih')
+setTimeout(function () {
+    formPemilih.style.left = '0'
+    profilePemilih.style.right = '0'
+}, 300)
+
+const suara = document.getElementById('suara')
+let suaraMasuk = parseInt(suara.getAttribute('data-suara'))
+let suaraAwal = 0
+// suara.innerHTML = `Total Suara Masuk (${suaraAwal}) suara`
+let waktu = setInterval(function () {
+    console.log(++suaraAwal)
+    if (suaraAwal === suaraMasuk) {
+        stop()
+    }
+    suara.innerHTML = `Total Suara Masuk (${suaraAwal}) suara`
+}, 200)
+function stop() {
+    if (suaraAwal === suaraMasuk) {
+        clearInterval(waktu)
+    }
+}

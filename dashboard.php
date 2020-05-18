@@ -71,7 +71,7 @@
         </nav>
     </header>
     <main>
-        <div class="profile">
+        <div id="profilePemilih" class="profile">
             <section class=banner-profile>
             <form class=card-proflie action="" method="post" enctype="multipart/form-data">
                 <?php if ($user['foto'] == '') : ?>
@@ -88,7 +88,7 @@
             </form>
         </div>
         <aside class="form">
-        <div class="tabel">
+        <div id="formPemilih" class="tabel">
            <form action="" method="post" enctype="multipart/form-data">
                 <table class="card">
                     <tr>
@@ -146,4 +146,6 @@
             <p>Ali Naufal Ammarullah, Nurul Akbar Al-Ghifari, Nur Laely Mutmainnah</p>
         </h4>
     </footer>
+    <script src="./scripts/main.js"></script>
 </body>
+</html>

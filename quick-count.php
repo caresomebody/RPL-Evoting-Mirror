@@ -88,7 +88,8 @@
                 <?php endforeach; ?>
             </div>
             <div class="quick-count__suara-masuk-wrapper">
-                <h1 class="quick-count__suara-masuk">Total Suara Masuk (<?= $total_suara;?>) suara</h1>
+                <!-- <h1 data-suara="<?= $total_suara;?>" id="suara" class="quick-count__suara-masuk">Total Suara Masuk (<?= $total_suara;?>) suara</h1> -->
+                <h1 data-suara="<?= $total_suara;?>" id="suara" class="quick-count__suara-masuk">Total Suara Masuk (<?= $total_suara;?>) suara</h1>
             </div>
         </section>
     </main>
@@ -100,5 +101,6 @@
             <p>Ali Naufal Ammarullah, Nurul Akbar Al-Ghifari, Nur Laely Mutmainnah</p>
         </h4>
     </footer>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
