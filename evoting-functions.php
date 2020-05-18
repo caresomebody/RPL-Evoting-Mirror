@@ -39,13 +39,18 @@
         $kota = $_POST["kota"];
         $provinsi = $_POST["provinsi"]; 
         $pin = $_POST["pin"];
-        $query = pg_query("INSERT INTO pemilih 
-        (nik, nama_lengkap, tanggal_lahir, kota, provinsi, pin, foto, status_memilih) VALUES
-        ('$nik', '$nama_lengkap', '$tanggal_lahir', '$kota', '$provinsi', '$pin', '', 'false')");
-        if( $query == true ) {
-            return 1;
+        $query_s = pg_query("SELECT * FROM pemilih WHERE nik = '$nik'");
+        if (pg_fetch_row($query_s)) {
+            return 2;
         } else {
-            return 0;
+            $query = pg_query("INSERT INTO pemilih 
+            (nik, nama_lengkap, tanggal_lahir, kota, provinsi, pin, foto, status_memilih) VALUES
+            ('$nik', '$nama_lengkap', '$tanggal_lahir', '$kota', '$provinsi', '$pin', '', 'false')");
+            if( $query == true ) {
+                return 1;
+            } else {
+                return 0;
+            }        
         }
     }
 

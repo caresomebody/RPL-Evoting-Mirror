@@ -3,9 +3,11 @@
     include("evoting-functions.php");
     $st = false;
     if ( isset($_POST["submit"]) ) {
-        if (register()) {
+        if (register() === 1) {
             echo "<script>alert('Sukses Mendaftar')</script>";
-        } else {
+        } else if (register() === 2){
+            echo "<script>alert('NIK sudah terdaftar!')</script>";            
+        }else {
             echo "<script>alert('Gagal Mendaftar')</script>";
         }
     }
