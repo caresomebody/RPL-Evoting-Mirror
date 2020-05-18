@@ -60,9 +60,9 @@
     <main>
         <section class="rekam-jejak">
             <div class="rekam-jejak__title-wrapper">
-                <h1 class="rekam-jejak__title">Rekam Jejak</h1>
+                    <h1 class="rekam-jejak__title">Rekam Jejak</h1>
             </div>
-            <div class="rekam-jejak__paslon-wrapper">
+            <div id="paslonWrapper" class="rekam-jejak__paslon-wrapper">
                 <div class="rekam-jejak__paslon">
                     <img src="./assets/pictures/<?= $pas['foto']; ?>" alt="Dummy Pictures" width="250">
                     <h2 class="rekam-jeak__no"><?= "0".$pas["no_urut"]; ?></h2>
@@ -70,10 +70,10 @@
                 </div>
             </div>
         </section>
-        <section class="berita">
+        <section id="beritaContainer" class="berita">
             <?php $index = 0; ?>
             <?php foreach($news as $berita) : ?>
-                <div class="berita__container">
+            <div class="berita__container">
                 <div class="berita__item">
                     <img class="berita__banner" src="./assets/pictures/<?= $berita['img'];?>" alt="Dummy Image" width="200">
                 </div>
@@ -103,5 +103,6 @@
             <p>Ali Naufal Ammarullah, Nurul Akbar Al-Ghifari, Nur Laely Mutmainnah</p>
         </h4>
     </footer>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

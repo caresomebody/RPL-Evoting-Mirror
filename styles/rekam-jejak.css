@@ -3,7 +3,7 @@
 }
 body {
     background: #fff;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* =======================MAIN======================= */
 .rekam-jejak {
@@ -13,11 +13,14 @@ body {
     color: #d90000;
     font-size: 3.8rem;
     font-weight: bold;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .rekam-jejak__paslon-wrapper {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    left: -50rem;
+    transition: 1s;
 }
 .rekam-jejak__paslon {
     text-align: center;
@@ -27,7 +30,7 @@ body {
     border-radius: 2rem;
     padding: 3rem 2rem;
     font-weight: bold;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #d90000;
 }
 .rekam-jejak__paslon > * {
@@ -36,18 +39,20 @@ body {
 
 .berita {
     color: #d90000;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+    transition: 1s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .berita__container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: coloumn nowrap;
     margin: 0 0 4rem 0;
 }
 .berita__item {
     /* background: aqua; */
     flex: 1 1 20rem;
     color: #d90000;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .berita__item:first-child {
     text-align: center;
