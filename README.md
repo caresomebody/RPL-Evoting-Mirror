@@ -47,7 +47,7 @@ Target dari aplikasi kami adalah masyarakat yang sudah memenuhi syarat untuku me
 
 # Gantt Chart
 ## TRELLO
-![image](https://user-images.githubusercontent.com/48080443/82117376-bd4dbb80-9799-11ea-94d7-fc3829b4b669.png)
+![image](https://github.com/nurulakbaral/RPL-EVoting/issues/1#issuecomment-631192066)
 ## Team Gantt
 ![Team Gantt](https://user-images.githubusercontent.com/48080443/82117761-a492d500-979c-11ea-90e3-e7c698111b1e.png)
 # ERD
