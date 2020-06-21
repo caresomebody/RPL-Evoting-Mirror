@@ -5,7 +5,6 @@
 */
 
 CREATE TABLE Pemilih(
-    idPemilih VARCHAR (8) NOT NULL
     nik VARCHAR(20) NOT NULL,
     nama_lengkap VARCHAR(255) NOT NULL,
     tanggal_lahir VARCHAR(100) NOT NULL,
@@ -14,7 +13,7 @@ CREATE TABLE Pemilih(
     pin VARCHAR (20) NOT NULL,
     foto VARCHAR(100) NOT NULL,
     status_memilih BOOLEAN NOT NULL,
-    CONSTRAINT pemilih_idPemilih_pk PRIMARY KEY(idPemilih)
+    CONSTRAINT pemilih_idPemilih_pk PRIMARY KEY(nik)
 );
 
 CREATE TABLE Paslon(
